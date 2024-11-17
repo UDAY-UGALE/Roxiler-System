@@ -1,0 +1,172 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Mobile Container */
+.mobile {
+    width: 350px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header i {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.header h1 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Speed Display Section */
+.fan-speed-display {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.speed-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #cce7ff, #e6f3ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.speed-value {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.speed-label {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.mode {
+    color: #444;
+}
+
+.mode p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mode h3 {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Speed Controls */
+.speed-controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.speed-button {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.speed-button:hover {
+    transform: scale(1.1);
+}
+
+/* Control Buttons */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.control-button {
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.control-button:hover {
+    transform: translateY(-5px);
+    background-color: #e6f3ff;
+}
+
+.control-button i {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.control-button span {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Power Button */
+.power-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.power-button i {
+    font-size: 2rem;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.power-button i:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,280 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mobile {
+    width: 350px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; 
+    background-color: white;      /* Spread the text and button */
+}
+
+.sec1{
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+
+.sec1 h1, .sec1 p {
+    margin: 0; /* Remove margin from both h1 and p elements */
+    padding: 0; /* Remove any padding */
+    font-size: small;
+}
+
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.energy-usage {
+    margin: 20px 0;
+}
+
+.energy-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #f1f8ff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.energy-card i {
+    font-size: 30px;
+    color: #4a90e2;
+}
+
+.energy-card h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.energy-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+.energy-card:hover{
+    transform: scale(1.05);   
+}
+
+.linked {
+    margin: 20px 0;
+    background-color: white;
+}
+
+.linked h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    background-color: white;
+}
+
+.device{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.device i {
+    font-size: 24px;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.device h3 {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.device p {
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* On off button */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 25px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(24px);
+  }
+  
+
+  .device:hover {
+    transform: scale(1.05); /* Slightly enlarge the card */ /* Gradient background */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1); /* Slightly elevated shadow */
+}
+
+
+  .control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add space between the switch and color picker */
+}
+
+.color-picker input[type="color"] {
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+/* Footer Styles */
+footer{
+    background-color:white;
+}
+
+.foot {
+    background-color: #f1f8ff;
+    border-radius: 20px 20px 20px 20px;
+    /* box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot:hover{
+    transform: scale(1.1);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #f1f8ff;
+}
+
+.footer-link i {
+    font-size: 20px;
+    color: #4a90e2;
+}
+
+.footer-link span {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.footer-link:hover {
+    color: #0056b3;
+}
+
+.footer-link i:hover {
+    color: #0056b3;
+    transform: scale(1.1);
+}

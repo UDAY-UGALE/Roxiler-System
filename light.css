@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main Controller Container */
+.controller-container {
+    width: 400px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #ffffff, #f0f4f8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.back-btn,
+.settings-icon {
+    font-size: 1.2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.back-btn:hover,
+.settings-icon:hover {
+    color: #007bff;
+}
+
+/* Bulb Section */
+.bulb-section {
+    margin-bottom: 20px;
+}
+
+.bulb-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff9c4 70%, #f6f8fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bulb-icon {
+    font-size: 5rem;
+    color: #ffff00;
+    transition: color 0.3s ease;
+}
+
+.brightness-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.brightness-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #007bff;
+    color: #fff;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.brightness-btn:hover {
+    background: #0056b3;
+}
+
+/* Color Section */
+.color-section {
+    margin-bottom: 20px;
+}
+
+.color-picker {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-label {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Power Button */
+.power-btn-wrapper {
+    text-align: center;
+}
+
+.power-btn {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.power-btn:hover {
+    background: #cc0000;
+}
+
+
+.mode {
+    color: #444;
+    margin: 0 0 20px 0;
+}
+
+.mode p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.mode h3 {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+}
