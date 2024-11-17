@@ -12,4 +12,3 @@ Following are the operation need to be performed on each appliance:
 - Adjust the brightness of Lights & Bulbs
 - Change the color of the lights
 
-- 
